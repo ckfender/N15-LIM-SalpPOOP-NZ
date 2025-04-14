@@ -19,6 +19,8 @@ xsampleN15outputsNZ.R: This is the file that actually runs the MCMC+15N inverse.
 
 ExternalFunctionsNZ.R and ExternalFunctionsNZC1: These files are called by xsampleN15outputsNZ.R and serve to re-set the approximate equality matrix (Aa) based on changes in the estimated δ15N of each model compartment as stored in the d15N vector.
 
+Additional scripts related to post-processing and the creation of the figures used in the manuscripts are also provided in the Extras folder.
+
 References 
 Stukel, M.R., Décima, M. and Kelly, T.B., 2018a. A new approach for incorporating 15N isotopic data into linear inverse ecosystem models with Markov Chain Monte Carlo sampling. PloS one, 13(6): e0199123. 
 Stukel, M.R., Décima, M., Landry, M.R. and Selph, K.E., 2018b. Nitrogen and isotope flows through the Costa Rica Dome upwelling ecosystem: The crucial mesozooplankton role in export flux. Global Biogeochemical Cycles, 32: 1815-1832. 

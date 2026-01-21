@@ -11,7 +11,7 @@ InputsNZ.xlsx and InputsNZC1: This excel file includes all the field data used t
 
 SetMatricesN15SalpPoop.m and SetMatricesN15SalpPoopC1.m: These Matlab files can be used to read the aforementioned excel files and create the matrices needed to run the LIM-N15-SalpPOOP-NZ model. This will creat initialization files for each of the 5 cycles following a naming convention of, in the case of Cycle 1, N15NZInverseCycle1.mat.
 
-N15GoMInverseCycleX.mat: These files (created by SetMatricesN15SalpPoop.m and SetMatricesN15SalpPoopC1.m) contain the matrices for Cycle X that must be solved by the LIM+15N procedure, as well as the δ15N values that add additional constraint to the random walk.
+N15NZInverseCycleX.mat: These files (created by SetMatricesN15SalpPoop.m and SetMatricesN15SalpPoopC1.m) contain the matrices for Cycle X that must be solved by the LIM+15N procedure, as well as the δ15N values that add additional constraint to the random walk.
 
 RunN15InverseNZ.R: This code runs the actual inverse model in R. It relies on the presence of the above input files (the .mat files mentioned previously) as well as the xsampleN15outputsNZ.R, ExternalFunctionsNZ.R, and ExternalFunctionsNZC1.R files. It will create files named N15NZInverseCycleXRoutputs.mat that contain the model solutions. These solutions are stored in the variables MCMCmat and del15N. Please note that the model is configured as it was run for the paper, including simulations >100,000,000 runs long which will likely take days to weeks to run in parallel for each cycle depending on your computational power.
 
@@ -21,8 +21,11 @@ ExternalFunctionsNZ.R and ExternalFunctionsNZC1: These files are called by xsamp
 
 Additional scripts related to post-processing and the creation of the figures used in the manuscripts are also provided in the Extras folder.
 
-References 
+References:
 Stukel, M.R., Décima, M. and Kelly, T.B., 2018a. A new approach for incorporating 15N isotopic data into linear inverse ecosystem models with Markov Chain Monte Carlo sampling. PloS one, 13(6): e0199123. 
+
 Stukel, M.R., Décima, M., Landry, M.R. and Selph, K.E., 2018b. Nitrogen and isotope flows through the Costa Rica Dome upwelling ecosystem: The crucial mesozooplankton role in export flux. Global Biogeochemical Cycles, 32: 1815-1832. 
+
 Stukel, M.R., Gerard, T., Kelly, T.B., Knapp, A. N., Laiz-Carrión, R., Lamkin, J. T., ... & Swalethorp, R. (2022). Plankton food webs in the oligotrophic Gulf of Mexico spawning grounds of Atlantic bluefin tuna. Journal of Plankton Research, 44(5), 763-781.
+
 Van den Meersche, K., Soetaert, K. and Van Oevelen, D., 2009. xSample(): An R function for sampling linear inverse problems. Journal of Statistal Software, Code Snippets, 30(1): 1-15.

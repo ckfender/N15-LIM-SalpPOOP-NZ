@@ -1,1 +1,1 @@
-The files in this folder are the result of the 400 million simulation long run for which the results are published in Fender et al., 2026. They act as both examples of the code outputs as well as the means for replicating the results and figures presented in that manuscript.
+The files in this folder are the result of the 400 million simulation run for which the results are published in Fender et al., 2026. They act as both examples of the code outputs as well as the means for replicating the results and figures presented in that manuscript.

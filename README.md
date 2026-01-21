@@ -3,7 +3,7 @@ This code is largely a modified use case of Stukel et al 2022's N15 Bloofinz Gul
 
 The goal of this code was to develop an approach sufficient to constrain an underdetermined ecosystem model for the open-ocean Chatham Rise with a specific focus on trophic pathways of salps within the euphotic zone (upper 70 meters). The model includes a total of 140 unknown ecosystem nitrogen flows to be solved for as well as 24 mass balance (exact equality) equations, 64 approximate equality constraints (including 20 field rate measurements, 25 nitrogen istope mass balance equations, and 19 fish ingestion estimates), and 138 inequality constraints. Full details of the model are available in Fender et al., 2026. If you do not have access to that manuscript, please contact me for a copy.
 
-Files
+Key Files
 
 N15InverseModelNZ.xlsx and N15InverseModelNZC1: These files contain the model structure in an easily readable excel format. Note that because of slight differences in measurements Cycle 1 and the rest of the cruise (no evidence of migratory mesozooplankton in C1), structure differs slightly between the two configurations as there is one less compartment in the C1 version. This is also why there are often 2 versions of the following codes as well.
 
